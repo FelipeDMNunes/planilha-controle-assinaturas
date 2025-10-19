@@ -31,6 +31,26 @@
     .price{font-size:56px;font-weight:800;margin:10px 0;color:var(--brand)}
     ul{list-style:none;margin-top:10px;color:var(--muted)}
     footer{text-align:center;padding:40px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.1);margin-top:60px}
+
+    /* Botão Hotmart */
+    .btn-comprar{
+      display:inline-block;
+      margin-top:25px;
+      padding:14px 28px;
+      background:var(--brand);
+      color:white;
+      font-weight:700;
+      border:none;
+      border-radius:var(--radius);
+      text-decoration:none;
+      transition:all .25s ease;
+      box-shadow:0 8px 20px rgba(239,68,68,.3);
+    }
+    .btn-comprar:hover{
+      background:var(--brand-strong);
+      transform:translateY(-3px);
+      box-shadow:0 10px 25px rgba(239,68,68,.4);
+    }
   </style>
 </head>
 <body>
@@ -69,7 +89,9 @@
           <li>✔️ Compatível com Excel e Google Sheets</li>
           <li>✔️ Sem necessidade de instalação</li>
         </ul>
-        <p style="margin-top:20px;color:var(--muted)">Disponível em breve no Hotmart</p>
+        <a class="btn-comprar" href="https://pay.hotmart.com/G102493081F" target="_blank" rel="noopener noreferrer">
+          💳 Comprar agora
+        </a>
       </div>
     </section>
   </div>
@@ -79,7 +101,7 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
